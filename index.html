@@ -1,8 +1,36 @@
 <html>
-<body>
-    <p id="p"></p>
-    <script>
-        document.getElementById("p").innerHTML = "pagina en github";
-    </script>
-</body>
+    <head>
+        <title>rensWeb</title>
+    </head>
+    <body>
+        <header></header>
+        <nav>
+            <label>rensweb</label>
+            <ul id="nav_var" name="nav">
+                <li>Inicio</li>
+            </ul>
+        </nav>
+        
+        <section id="idea">
+            <article>
+                <h1>Web estudiantil</h1>
+                <p>El contenido estara disponible pronto....</p>
+            </article>
+            <aside id="contacto">
+                <h3>Contacto:</h3>
+                <ul id="contacto"></ul>
+                <li>E-mail: ricaldillo5@gmail.com</li>
+            </aside>
+            <footer id="comentarios">
+                <form action="" method="_post" name="coment" id="comentario">
+                    <input type="text" placeholder="E-mail"name="user" required /><br />
+                    <textarea name="txtcomentario" placeholder="Escriba su comentario aqui..."></textarea><br />
+                    <input type="button" value="enviar" onclick="this.disabled=true; this.value='Enviando...'; this.form.sumbit()" />
+                </form>
+            </footer>
+        </section>
+        <script>
+        
+        </script>
+    </body>
 </html>
