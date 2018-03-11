@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css" />
         <title>rensWeb</title>
     </head>
     <body>
@@ -11,8 +11,8 @@
         <nav>
             <ul id="nav_var" name="nav">
                 
-                <li>Inicio</li>
-                <li>Comentarios</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Comentarios</a></li>
             </ul>
         </nav>
         
@@ -21,6 +21,12 @@
                 <h1>Web estudiantil</h1>
                 <p>El contenido estara disponible pronto....</p>
             </article>
+            <br/>
+            <article>
+                <p>Diseno de imagenes</p>
+                <a href="https://www.freepik.es/foto-gratis/textura-de-escritorio_1474170.htm">Diseñado por Freepik</a>
+            </article>
+            
         </section>
         
         <aside id="contacto">
@@ -32,10 +38,10 @@
             <h3>Comentarios:</h3>
             
             <div id="form_coment">
-              <form action="" method="_post" name="coment" id="comentario">
+              <form action="" method="_post" name="coment" id="comentario" onclick="document.getElementById(form_content)">
                   <input type="text" placeholder="E-mail"name="user" required /><br />
                  <textarea name="txtcomentario" placeholder="Escriba su comentario aqui..."></textarea>
-                <input type="button" value="enviar" onclick="this.disabled=true; this.value='Enviando...'; this.form.sumbit()" />
+                <input type="button" value="enviar" onclick="this.disabled=true; this.value='Enviando...'; this.form.sumbit()" id="send"/>
              </form>
             
             </div>
@@ -46,7 +52,7 @@
          </footer>
 
         <script>
-        
+
         </script>
     </body>
 </html>
